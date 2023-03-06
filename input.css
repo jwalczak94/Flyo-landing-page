@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-primaryColor font-bodyFont;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-headingFont leading-normal font-bold;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1rem, 0.4718rem + 2.2535vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.125rem, 0.8169rem + 1.3146vw, 2rem);
+}
+
+@layer components {
+  .main-container {
+    @apply max-w-7xl xl:mx-auto !important;
+  }
+
+  .btn {
+    @apply bg-btnColor font-bold font-headingFont text-white  hover:bg-accenctColor duration-300;
+  }
+
+  header form input,
+  header form .btn {
+    @apply rounded-md shadow-input py-3 xl:py-3;
+  }
+
+  section form input,
+  section form .btn {
+    @apply rounded-sm shadow-input py-[0.625rem] xl:py-4 max-h-8 lg:max-h-12;
+  }
+}
+
+.nav-links::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #6c9bff;
+  transition: width 0.3s;
+}
+
+.nav-links:hover::after {
+  width: 100%;
+}
+
+form:invalid span {
+  display: inline-block !important;
+}
