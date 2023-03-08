@@ -708,6 +708,18 @@ section form input,
   flex-basis: 51%;
 }
 
+.basis-\[43\%\] {
+  flex-basis: 43%;
+}
+
+.basis-\[52\%\] {
+  flex-basis: 52%;
+}
+
+.basis-\[53\%\] {
+  flex-basis: 53%;
+}
+
 .-translate-y-1 {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1313,6 +1325,11 @@ form:invalid span {
     padding-right: 4rem;
   }
 
+  .xl\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .xl\:pb-\[5\.375rem\] {
     padding-bottom: 5.375rem;
   }
@@ -1331,6 +1348,11 @@ form:invalid span {
 }
 
 @media (min-width: 1440px) {
+  .xxl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .xxl\:mb-\[10\.25rem\] {
     margin-bottom: 10.25rem;
   }
@@ -1346,5 +1368,13 @@ form:invalid span {
 
   .xxl\:pr-0 {
     padding-right: 0px;
+  }
+
+  .xxl\:pl-0 {
+    padding-left: 0px;
+  }
+
+  .xxl\:pr-\[6\.875rem\] {
+    padding-right: 6.875rem;
   }
 }
